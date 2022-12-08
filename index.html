@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="tiledBackground">
+    <div id="container" >
+        <div class="navbar bg-light" >
+            <h1 id="header">Epic <span id="epik"> Cinema</span></h1>
+            <ul id="menus">
+                <li>Menu</li>
+                <li>Movies</li>
+                <li>Tickets</li>
+                <li>Time</li>
+            </ul>
+        </div>   
+        
+          <!-- Landing page div     -->
+        <div id="landingPage" class="">
+
+            <!-- movie list side (left-side)      -->
+            <div id="titles" class="">
+                <h3>Movies Available</h3>
+                <ol id="list"></ol>
+                    
+            </div>
+    
+             <!-- Image Div which will be at the center    -->
+            <div  id="image" class="">
+                <img id="images" src="img/movie time.jpg" alt="Movie Time">
+
+            </div>
+
+             <!-- Movie description form, time, ticket available etc on the right side          -->
+            <div class="display">
+                <h5 id="title"></h5>
+                <h5 id="runtime"></h5>
+                <h5 id="capacity"></h5>
+                <h5 id="showtime"></h5>
+                <h5 id="tickets"></h5>
+                <p id="description"></p>
+
+                <button class = "btn btn-success btnn" id="buy-ticket" type="button">Buy Ticket</button>
+ 
+            </div>    
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

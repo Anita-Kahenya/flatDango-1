@@ -1,0 +1,106 @@
+{
+    "movies": [
+
+    {
+
+      "id": "1",
+
+      "title": "The Giant Gila Monster",
+
+      "runtime": "108",
+
+      "capacity": 30,
+
+      "showtime": "04:00PM",
+
+      "tickets_available": 27,
+
+      "description": "A giant lizard terrorizes a rural Texas community and a heroic <br> teenager attempts to destroy the creature.",
+
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg"
+
+    },
+
+    {
+
+      "id": "2",
+
+      "title": "Manos: The Hands Of Fate",
+
+      "runtime": "118",
+
+      "capacity": 50,
+
+      "showtime": "06:45PM",
+
+      "tickets_available": 44,
+
+      "description": "A family gets lost on the road and stumbles upon a hidden, underground,<br> devil-worshiping cult led by the fearsome Master and his servant Torgo.",
+
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/47781/p47781_v_v8_ac.jpg"
+
+    },
+
+    {
+
+        "id": "3",
+  
+        "title": "Little man",
+  
+        "runtime": "120",
+  
+        "capacity": 70,
+  
+        "showtime": "07:30PM",
+  
+        "tickets_available": 50,
+  
+        "description": "Posing as an abandoned toddler, a very small fugitive (Marlon Wayans) <br> from the law tricks a couple (Shawn Wayans, Kerry Washington) into taking him in.<br> Once there, the baby-faced thief endures the other man's attempts at fatherhood while waiting for a chance <br> to take back the stolen gem he hid in the wife's purse.",
+  
+        "poster": "img/little man.jpeg"
+  
+      },
+
+      {
+
+        "id": "4",
+  
+        "title": "All American",
+  
+        "runtime": "180",
+  
+        "capacity": 100,
+  
+        "showtime": "08:00PM",
+  
+        "tickets_available": 88,
+  
+        "description": "When a rising high school American football player from South L.A. <br> is recruited to play for Beverly Hills High, the wins, losses <br> and struggles of two families from vastly different worlds—Crenshaw and Beverly Hills—begin to collide.<br> Inspired by the life of pro football player Spencer Paysinger.",
+  
+        "poster": "img/all  american.jpg"
+  
+      },
+
+      {
+
+        "id": "5",
+  
+        "title": "Click Click Bang",
+  
+        "runtime": "125",
+  
+        "capacity": 200,
+  
+        "showtime": "10:00PM",
+  
+        "tickets_available": 190,
+  
+        "description": "GLL is a hilarious and dangerous story about Joe. A man whose people-pleasing and deceitful ways <br> landed in hot soup when the walls came crumbling.",
+  
+        "poster": "img/click click bang.jpg"
+  
+      }
+
+]
+
+}
