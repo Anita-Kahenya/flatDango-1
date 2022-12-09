@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="tiledBackground">
-    <div id="container" >
+    <div class="container-flex" >
         <div class="navbar bg-light" >
             <h1 id="header">Epic <span id="epik"> Cinema</span></h1>
             <ul id="menus">
-                <li>Menu</li>
-                <li>Movies</li>
-                <li>Tickets</li>
-                <li>Time</li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Movies</a></li>
+                <li> <a href="">Tickets</a></li>
+                <li><a href="">Time</a></li>
             </ul>
         </div>   
         
-          <!-- Landing page div     -->
+             <!-- Landing page div     -->
         <div id="landingPage" class="">
 
-            <!-- movie list side (left-side)      -->
-            <div id="titles" class="">
+             <!-- movie list side (left-side)      -->
+            <div id="titles" class="card">
                 <h3>Movies Available</h3>
-                <ol id="list"></ol>
+                <ul id="list"></ul>
                     
             </div>
     
@@ -36,19 +36,70 @@
             </div>
 
              <!-- Movie description form, time, ticket available etc on the right side          -->
-            <div class="display">
-                <h5 id="title"></h5>
-                <h5 id="runtime"></h5>
-                <h5 id="capacity"></h5>
-                <h5 id="showtime"></h5>
-                <h5 id="tickets"></h5>
-                <p id="description"></p>
+            <div class="display card">
+                <h5 class="">Title: <span  id="title"></span></h5>
+                <h5 class="">Runtime: <span  id="runtime"></span></h5>
+                <h5 class="">Capacity: <span  id="capacity"></span></h5>
+                <h5 class="">Showtime: <span  id="showtime"></span></h5>
+                <h5 class="">Tickets Available: <span  id="tickets"></span></h5>
+                <h5 class="">Description: <span id="description"></span></h5>
 
-                <button class = "btn btn-success btnn" id="buy-ticket" type="button">Buy Ticket</button>
+              <!-- <button class = "btn btn-success btnn btn-sm d-grid gap-2 col-6 mx-auto" id="buy-ticket" type="button">Buy Ticket</button> -->
  
             </div>    
         </div>
     </div>
+                   <h3 id="buy">Buy Your Ticket</h3>
+    <div class="form">
+        
+        <form action="">
+            <label for="">Enter Your Name</label>
+            <input type="text" placeholder="Name" id="ticket-entry">
+            <label for="">No of Tickets</label>
+            <input type="number" placeholder="Number of tickets">
+            <input id="btn" type="submit" placeholder="Buy Ticket"></input>
+        </form>
+
+        <footer id="footer">
+            <div>
+                <h3>Epic Cinema</h3>
+                <p>
+                    Epic Cinema is an Epic Group of Companies. <br>
+                    &copy 2021 Epic Cinema. All rights reserved. <br>
+                    <p></p>
+                    <p>
+                    Terms & Conditions <br>
+                    Privacy Policy <br>
+                    Contact Us  
+                    </p>
+                    
+                </p>
+            </div>
+    
+            <div>
+                <h3>Contact Us</h3>
+                    <p>Watsup: +2547 27 37 11 99</p>
+                    <p>Email: epikcinema@gmail.com</p>
+                    <p>Twitter:@epik_cinema</p>
+                    <p>Facebook: Epik Cinema Official</p>
+    
+            </div>
+    
+            <div>
+                <h3>Movies Categories</h3>
+                <a href=""><p>Lifestyle</p></a>
+                <a href=""><p>Comedy</p></a>
+                <a href=""><p>Animation</p></a>
+                <a href=""><p>Documentaries</p></a>
+                <a href=""><p>Series</p></a>
+
+
+    
+            </div>
+        </footer>
+    </div>
+
+   
     <script src="index.js"></script>
 </body>
 </html>

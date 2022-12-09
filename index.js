@@ -22,26 +22,42 @@ fetch(" http://localhost:3000/movies")
             const description = document.querySelector("#description")
 
             image.src = movie.poster
-            title.innerHTML = `Title: ${movie.title}`
-            runtime.innerHTML = `Runtime: ${movie.runtime} `
-            capacity.innerHTML = `Capacity: ${movie.capacity}`
-            showtime.innerHTML = `Showtime: ${movie.showtime}`
-            ticket.innerHTML = `Tickets Available: ${movie.tickets_available}`
-            description.innerHTML = `Movie's Description: ${movie.description}`
+            title.innerHTML = `${movie.title}`
+            runtime.innerHTML = `${movie.runtime} `
+            capacity.innerHTML = `${movie.capacity}`
+            showtime.innerHTML = `${movie.showtime}`
+            ticket.innerHTML = `${movie.tickets_available}`
+            description.innerHTML = `${movie.description}`
     
         }
 
-    const btn = document.querySelector("#buy-ticket")
+    const btn = document.querySelector("#btn")
 
     btn.addEventListener("click", ticketButton)
 
     function ticketButton(e){
-            e.preventDefault()
+        e.preventDefault()
+        let ticketBar = document.querySelector("#tickets").textContent;
+        let ticketEntry = document.querySelector("#ticket-entry").value;
+        
+        ticketBar = parseInt(ticketBar,10)
+        ticketEntry = parseInt(ticketEntry,10)||0
+
+        ticketEntry = ticketEntry - ticketBar
 
 
-    let ticket = document.querySelector("#tickets")
-    ticket.innerHTML -= movie.tickets_available.id
-   
+        fetch(`http://localhost:3000/movies/${id}`,{
+            method: "PATCH",
+            headers: {
+                'Content-Type': 'application/json'
+                
+              },
+              body: JSON.stringify({tickets_available:ticketEntry})
+        }).then(res => res.json()).then(movie => tickets_available.textContent = movie.tickets_available )
+        e.reset()
+    
+
+
 }
     })
 })
