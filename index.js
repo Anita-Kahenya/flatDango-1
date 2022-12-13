@@ -76,7 +76,7 @@ function ticketButton(e){
     tickets_available = 0
    }
    else if ((buyTicket > availableTicket) && (availableTicket >= 0)){
-    alert("Buy the shown number of tickets")
+    alert("You are buying more ticket than what we have.")
    }
    else {
     availableTicket = availableTicket - buyTicket
