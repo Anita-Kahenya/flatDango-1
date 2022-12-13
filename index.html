@@ -42,6 +42,7 @@
                 <h5 class="">Capacity: <span  id="capacity"></span></h5>
                 <h5 class="">Showtime: <span  id="showtime"></span></h5>
                 <h5 class="">Tickets Available: <span  id="tickets"></span></h5>
+                <h5 class="">Tickets Sold: <span  id="sold"></span></h5>
                 <h5 class="">Description: <span id="description"></span></h5>
 
               <!-- <button class = "btn btn-success btnn btn-sm d-grid gap-2 col-6 mx-auto" id="buy-ticket" type="button">Buy Ticket</button> -->
@@ -49,15 +50,17 @@
             </div>    
         </div>
     </div>
-                   <h3 id="buy">Buy Your Ticket</h3>
+
+         <h3 id="buy">Buy Your Ticket</h3>
+                   
     <div class="form">
         
-        <form action="">
+        <form id="form">
             <label for="">Enter Your Name</label>
-            <input type="text" placeholder="Name" id="ticket-entry">
+            <input type="text" placeholder="Name" id="name-entry">
             <label for="">No of Tickets</label>
-            <input type="number" placeholder="Number of tickets">
-            <input id="btn" type="submit" placeholder="Buy Ticket"></input>
+            <input type="number" placeholder="Number of tickets" id="entry">
+            <input id="button" type="submit" action="submit" placeholder="Buy Ticket"></input>
         </form>
 
         <footer id="footer">
